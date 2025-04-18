@@ -11,12 +11,11 @@ async function build() {
       entryPoints: ['src/index.ts'],
       outfile: 'dist/index.js',
       bundle: true,
-      minify: true,
       sourcemap: true,
       platform: 'node',
-      target: 'node12',
+      target: 'node14',
       format: 'cjs',
-      external: ['postcss'] // postcss is peer-dependency
+      external: ['esbuild']
     });
 
     console.log('✅ Build complete!');

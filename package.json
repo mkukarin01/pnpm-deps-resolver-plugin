@@ -8,9 +8,24 @@
   },
   "author": "Maksim Kukarin <m.kukarin01@gmail.com>",
   "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "node build.cjs",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "yarn run build"
+  },
+  "peerDependencies": {
+    "esbuild": "^0.25.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
