@@ -1,0 +1,20 @@
+{
+  "name": "pnpm-deps-resolver-plugin",
+  "version": "0.0.1",
+  "description": "Plugin for resolving lost dependencies in pnpm (or any other) installations",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mkukarin01/pnpm-deps-resolver-plugin.git"
+  },
+  "author": "Maksim Kukarin <m.kukarin01@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node build.cjs",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "esbuild": "^0.25.2",
+    "typescript": "^5.8.3"
+  }
+}
