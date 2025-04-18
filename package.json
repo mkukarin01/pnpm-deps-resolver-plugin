@@ -1,6 +1,6 @@
 {
   "name": "pnpm-deps-resolver-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plugin for resolving lost dependencies in pnpm (or any other) installations",
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "readme.md"
   ],
   "scripts": {
     "build": "node build.cjs",
